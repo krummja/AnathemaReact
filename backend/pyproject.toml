@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "anathema"
+version = "0.1.0"
+description = ""
+authors = ["Jonathan Crum <jcrum@theobogroup.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+werkzeug = "^2.2.2"
+fastapi = "^0.89.1"
+beartype = "^0.12.0"
+uvicorn = "^0.20.0"
+pydantic = "^1.10.4"
+rich = "^13.3.1"
+
+[tool.poetry.scripts]
+start = "anathema.main:start"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
